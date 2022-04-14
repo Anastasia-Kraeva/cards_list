@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import {IPhoto, IPost} from '../../models/interfaces';
+import Like from '../icons/Like/Like';
 
 interface PostItemProps {
   post: IPost;
@@ -7,8 +8,15 @@ interface PostItemProps {
 }
 
 const PostCard: FC<PostItemProps> = ({post, photo}) => {
+  const [isFavorite, setIsFavorite]=React.useState(false)
+
+  const handleToggleLike = () => {
+    setIsFavorite(!isFavorite)
+  }
+
   return (
     <div className="post-card">
+      <Like onClick={handleToggleLike} isActive={isFavorite}/>
       <div className="post-card_title-wrapper">
         <h3 className="post-card_title">{post.title}</h3>
       </div>
