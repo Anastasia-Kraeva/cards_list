@@ -1,0 +1,10 @@
+.post-card_like-icon {
+  width: 2em;
+  stroke-width: 2.5px;
+  stroke: #96a0ab;
+  fill: #fff;
+}
+
+.post-card_like-icon:hover {
+  stroke: #df7487;
+}

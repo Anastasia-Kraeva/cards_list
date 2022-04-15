@@ -1,0 +1,8 @@
+.post-card_delete-icon {
+  width: 2.5em;
+  fill: #96a0ab;
+}
+
+.post-card_delete-icon:hover {
+  fill: #47525e;
+}

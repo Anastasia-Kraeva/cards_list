@@ -1,0 +1,26 @@
+.button-filter {
+  display: flex;
+  align-items: center;
+  color: #96a0ab;
+  fill: #96a0ab;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.button-filter:hover {
+  background-color: #daeeee;
+  color: #47525e;
+  fill: #47525e;
+}
+
+.button-filter:active {
+  background-color: #c3dfdf;
+  color: #282f36;
+  fill: #282f36;
+}
+
+.button-filter_icon {
+  width: 1em;
+  margin-right: 4px;
+}

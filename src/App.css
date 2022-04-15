@@ -21,14 +21,6 @@ p {
   height: 80px;
 }
 
-h3.post-card_title {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  padding: 0 32px 0 16px;
-}
-
 .container {
   max-width: 960px;
   margin: auto;
@@ -44,106 +36,8 @@ h3.post-card_title {
   padding-right: 32px;
 }
 
-.button-filter {
-  display: flex;
-  align-items: center;
-  color: #96a0ab;
-  fill: #96a0ab;
-  padding: 8px;
-  border-radius: 6px;
-  border: none;
-}
-
-.button-filter:hover {
-  background-color: #daeeee;
-  color: #47525e;
-  fill: #47525e;
-}
-
-.button-filter:active {
-  background-color: #c3dfdf;
-  color: #282f36;
-  fill: #282f36;
-}
-
-.button-filter_icon {
-  width: 1em;
-  margin-right: 4px;
-}
-
-.posts-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 400px);
-  grid-gap: 1em 20px;
-  margin-top: 32px;
-}
-
-.post-card {
-  max-width: 268px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-}
-
-.post-card_buttons-wrapper {
-  display: flex;
-  justify-content: center;
-  padding-top: 8px;
-}
-
 .button-icon {
   background-color: #fff;
   border: none;
   padding: 0;
-}
-
-.post-card_delete-icon {
-  width: 2.5em;
-  fill: #96a0ab;
-}
-
-.post-card_delete-icon:hover {
-  fill: #47525e;
-}
-
-.post-card_like-icon {
-  width: 2em;
-  stroke-width: 2.5px;
-  stroke: #96a0ab;
-  fill: #fff;
-}
-
-.post-card_like-icon:hover {
-  stroke: #df7487;
-}
-
-.post-card-img_wrapper {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.post-card-img_wrapper img {
-  height: 300px;
-  width: 300px;
-}
-
-@media (max-width: 1100px ) {
-  .posts-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px ) {
-  .posts-list {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }

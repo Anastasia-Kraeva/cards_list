@@ -1,6 +1,7 @@
 import React from 'react';
 import {useTypedSelector} from '../../hooks/redux';
 import {ICard} from '../../models/interfaces';
+import './styles.css';
 
 import PostCard from '../PostCard/PostCard';
 

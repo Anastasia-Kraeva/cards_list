@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import './styles.css';
 
 interface LikeProps {
   onClick: () => void,

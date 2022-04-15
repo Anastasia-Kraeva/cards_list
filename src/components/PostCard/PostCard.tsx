@@ -4,6 +4,7 @@ import {useTypedDispatch} from '../../hooks/redux';
 import {ICard} from '../../models/interfaces';
 import Like from '../icons/Like/Like';
 import Delete from '../icons/Delete/Delete';
+import './styles.css';
 
 interface PostItemProps {
   card: ICard
