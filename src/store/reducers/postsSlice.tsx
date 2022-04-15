@@ -3,10 +3,12 @@ import {ICard, IToggleIsFavorite} from '../../models/interfaces';
 
 interface IState {
   cards: ICard[],
+  isShowFavoritesOnly: boolean,
 }
 
 const initialState: IState = {
   cards: [],
+  isShowFavoritesOnly: false,
 }
 
 const postsSlice = createSlice({
@@ -23,9 +25,12 @@ const postsSlice = createSlice({
         }
         return card
       })
+    },
+    toggleShowFavoritesOnly(state, action: PayloadAction<boolean>) {
+      state.isShowFavoritesOnly = action.payload
     }
   }
 })
 
-export const {toggleIsFavorite, createCard} = postsSlice.actions
+export const {toggleIsFavorite, createCard, toggleShowFavoritesOnly} = postsSlice.actions
 export default postsSlice.reducer
