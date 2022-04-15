@@ -18,6 +18,9 @@ const postsSlice = createSlice({
     createCard(state, action: PayloadAction<ICard>) {
       state.cards.push(action.payload)
     },
+    deleteCard(state, action: PayloadAction<number>) {
+      state.cards = state.cards.filter((card) => card.post.id !== action.payload)
+    },
     toggleIsFavorite(state, action: PayloadAction<IToggleIsFavorite>) {
       state.cards = state.cards.map(card => {
         if (card.post.id === action.payload.id) {
@@ -32,5 +35,5 @@ const postsSlice = createSlice({
   }
 })
 
-export const {toggleIsFavorite, createCard, toggleShowFavoritesOnly} = postsSlice.actions
+export const {toggleIsFavorite, createCard, toggleShowFavoritesOnly, deleteCard} = postsSlice.actions
 export default postsSlice.reducer

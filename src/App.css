@@ -90,16 +90,25 @@ h3.post-card_title {
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 }
 
+.post-card_buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
 .button-icon {
   background-color: #fff;
   border: none;
   padding: 0;
 }
 
-.button-icon-like {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+.post-card_delete-icon {
+  width: 2.5em;
+  fill: #96a0ab;
+}
+
+.post-card_delete-icon:hover {
+  fill: #47525e;
 }
 
 .post-card_like-icon {
@@ -107,6 +116,10 @@ h3.post-card_title {
   stroke-width: 2.5px;
   stroke: #96a0ab;
   fill: #fff;
+}
+
+.post-card_like-icon:hover {
+  stroke: #df7487;
 }
 
 .post-card-img_wrapper {

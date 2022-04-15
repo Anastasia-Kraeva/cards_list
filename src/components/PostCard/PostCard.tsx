@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
-import {toggleIsFavorite} from '../../store/reducers/postsSlice';
+import {deleteCard, toggleIsFavorite} from '../../store/reducers/postsSlice';
 import {useTypedDispatch} from '../../hooks/redux';
 import {ICard} from '../../models/interfaces';
 import Like from '../icons/Like/Like';
+import Delete from '../icons/Delete/Delete';
 
 interface PostItemProps {
   card: ICard
@@ -15,9 +16,16 @@ const PostCard: FC<PostItemProps> = ({card}) => {
     dispatch(toggleIsFavorite({id: card.post.id, value: !(card.isFavorite)}))
   }
 
+  const handleCardDelete = () => {
+    dispatch(deleteCard(card.post.id))
+  }
+
   return (
     <div className="post-card">
-      <Like onClick={handleToggleLike} isActive={card.isFavorite}/>
+      <div className="post-card_buttons-wrapper">
+        <Delete onClick={handleCardDelete}/>
+        <Like onClick={handleToggleLike} isActive={card.isFavorite}/>
+      </div>
       <div className="post-card_title-wrapper">
         <h3 className="post-card_title">{card.post.title}</h3>
       </div>
