@@ -1,18 +1,25 @@
 # cards_list
 
-Создать SPA со списком карточек, на каждой из которых выводится картинка и любая информация с эндпоинта.
-Для задачи можно выбрать любое публичное api, например https://github.com/public-apis/public-apis
+**Getting started**
 
-Пришедшие данные хранятся в сторе.
-На карточке должна быть иконка лайка. При нажатии на которую, ставится или убирается лайк. Иконка должна менять цвет в зависимости от состояния.
-На карточке должна быть иконка удаления.
-Сверху должна быть кнопка фильтра, которая по нажатию показывает только залайканые карточки. При отжатии опять показываются все карточки.
-Дизайн не важен, главное, чтобы было просто и аккуратно.
+1. Clone the repository
 
-Стэк:
-React,
-Redux,
-TS желательно
+```
+  git clone https://github.com/Anastasia-Kraeva/cards_list.git
+```
 
-Формат сдачи
-Ссылка на GitHub + проект выложенный на GitHub Pages
+2. Install node modules using the command:
+
+```
+  npm install
+```
+
+**Available Scripts**
+
+In the project directory, you can run:
+
+```
+  npm start
+```
+
+Runs the app in the development mode. Open http://localhost:3000 to view it in your browser.
