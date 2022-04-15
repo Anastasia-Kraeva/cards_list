@@ -1,8 +1,10 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
 import {jsonPlaceholderApi} from '../services/JsonPlaceholderApi';
+import postsSlice from './reducers/postsSlice';
 
 const rootReducer = combineReducers({
   [jsonPlaceholderApi.reducerPath]: jsonPlaceholderApi.reducer,
+  reducerCards: postsSlice,
 })
 
 export const setupStore = () => {

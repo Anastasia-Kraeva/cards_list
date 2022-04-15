@@ -11,3 +11,14 @@ export interface IPhoto {
   url: string,
   thumbnailUrl: string,
 }
+
+export interface ICard {
+  post: IPost;
+  photo?: IPhoto;
+  isFavorite: boolean;
+}
+
+export interface IToggleIsFavorite {
+  id: number;
+  value: boolean;
+}
